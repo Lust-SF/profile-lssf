@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio Casual</title>
+    <link rel="shortcut icon" href="img/fav.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="marca">
+                <a href="#">Luis</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobre-mi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#historia" onclick="seleccionar()">HISTORIA</a></li>
+                    <li><a href="#addme" onclick="seleccionar()">ADD ME</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="foto">
+                <img src="img/Foto-main.jpeg" alt="Soy Luis">
+            </div>
+            <h1>LUIS SF</h1>
+            <h2>Ingeniero de Sistemas</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100072495716203" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/lust.sf/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://steamcommunity.com/profiles/76561198149735092/" target="_blank"><i class="fa-brands fa-steam"></i></a>
+                <a href="https://www.twitch.tv/lustsf" target="_blank"><i class="fa-brands fa-twitch"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="sobre-mi">
+        <div class="contenido-sobre-mi">
+            <h2>¿Quien soy?</h2>
+            <p><span>Hola, soy Luis... </span>Un joven olivense amante de los viajes y de los buenos momentos con las amistades verdaderas. Fan de los juegos online, de la pizza y de las caminatas.</p>
+            
+            <div class="fila-datos">
+                <div class="columna-datos">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>25/09/1998
+                        </li>
+                        <li>
+                            <strong>Celular</strong>922863435
+                        </li>
+                        <li>
+                            <strong>Email</strong>lustaryam@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>Los Olivos, Lima
+                        </li>
+                        <li>
+                            <strong>Oficio</strong>Front-End Developer
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="columna-datos">
+                    <h3>Intereses</h3>
+                    <div class="intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>CINE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>CONCIERTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>RECUERDOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="contenido-skills">
+            <h2>Skills</h2>
+
+            <div class="fila-skills">
+                <div class="columna-skills">
+                    <h3>Valores</h3>
+                    <div class="skill">
+                        <span>Paciencia</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Empatía</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Puntualidad</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Tolerancia</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsabilidad</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Honestidad</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columna-skills">
+                    <h3>Talento</h3>
+                    <div class="skill">
+                        <span>Fútbol</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Natación</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dota 2</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Fortnite</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Mobile Legends</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Programación</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="historia" id="historia">
+        <div class="contenido-historia">
+            <h2>Historia</h2>
+            <div class="fila-historia">
+                <div class="columna izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>5° Secundaria</h4>
+                        <span class="lugar">Trilce Pro</span>
+                        <span class="año">2013</span>
+                        <div class="conectorn">
+                            <div class="circulon"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería de Sistemas</h4>
+                        <span class="lugar">Universidad Nacional Federico Villarreal</span>
+                        <span class="año">2015-2021</span>
+                        <div class="conectorn">
+                            <div class="circulon"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columna derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4>Practicante C#</h4>
+                        <span class="lugar">SISDATA PERU</span>
+                        <span class="año">2020</span>
+                        <div class="conectorn2">
+                            <div class="circulon2"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="lugar">NTT DATA S.A.C.</span>
+                        <span class="año">Actualmente</span>
+                        <div class="conectorn2">
+                            <div class="circulon2"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="addme" id="addme">
+        <div class="contenido-addme">
+            <h2>ADD ME</h2>
+            <div class="galeria">
+                <div class="foto">
+                    <img src="img/addsteam.jpg" alt="Lust">
+                    <div class="overlay">
+                        <h3>Cuenta Steam</h3>
+                        <p>Dota 2</p>
+                    </div>
+                </div>
+                <div class="foto">
+                    <img src="img/gaaa-jean.jpg" alt="Lenguita">
+                    <div class="overlay">
+                        <h3>Viaje de Jean</h3>
+                        <p>Raaa</p>
+                    </div>
+                </div>
+                <div class="foto">
+                    <img src="img/jean-hambre.JPG" alt="Mordiendo">
+                    <div class="overlay">
+                        <h3>El que en pan piensa</h3>
+                        <p>Rico 7u7</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-contacto">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Celular">
+                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="Asunto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-sharp fa-solid fa-envelope"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <div class="col">
+                    <img src="img/antonio-que.JPG" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <a href="#inicio" class="ir-arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100072495716203" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/lust.sf/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://steamcommunity.com/profiles/76561198149735092/" target="_blank"><i class="fa-brands fa-steam"></i></a>
+            <a href="https://www.twitch.tv/lustsf" target="_blank"><i class="fa-brands fa-twitch"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,802 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.contenedor-header{
+    background-color: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100 px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .marca a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1cb698;
+    text-decoration: none;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover{
+    color:#1cb698;
+}
+
+.nav-responsive{
+    background-color: #1cb698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5 px;
+    cursor: pointer;
+    display: none;
+}
+
+/*---*/
+
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(img/Fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid #1cb698;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border:1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.inicio .contenido-banner .redes a:hover{
+    background-color: #1cb698;
+}
+
+.sobre-mi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.sobre-mi .contenido-sobre-mi{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobre-mi h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.sobre-mi p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;   
+}
+
+.sobre-mi .contenido-sobre-mi p span{
+    color: #1cb698;
+    font-weight: bold;
+}
+
+.sobre-mi .fila-datos{
+    display: flex;
+}
+
+.sobre-mi .fila-datos .columna-datos{
+    width: 50%;
+}
+
+.sobre-mi .fila-datos .columna-datos h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.sobre-mi .fila-datos .columna-datos ul{
+    list-style: none;
+}
+
+.sobre-mi .fila-datos .columna-datos ul li{
+    margin: 12px 0px;
+}
+
+.sobre-mi .fila-datos .columna-datos ul li strong{
+    display: inline-block;
+    color: #1cb698;
+    width: 130px;
+}
+
+.sobre-mi .fila-datos .columna-datos ul li span{
+    background-color: #1cb698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobre-mi .fila-datos .columna-datos .intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-mi .fila-datos .columna-datos .intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0px 15px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    font-size: 14px;
+}
+
+.sobre-mi .fila-datos .columna-datos .intereses .interes:hover{
+    background-color: #1cb698;
+}
+
+.sobre-mi .fila-datos .columna-datos .intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.sobre-mi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.sobre-mi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1cb698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobre-mi button:hover .overlay{
+    width: 100%;
+}
+
+.skills{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.skills .contenido-skills{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.skills .fila-skills{
+    display: flex;
+}
+
+.skills .fila-skills .columna-skills{
+    width: 50%;
+    padding: 0px 20px;
+}
+
+.skills .fila-skills .columna-skills h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills .skill .barra{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progreso{
+    background-color: #1cb698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.skills .skill .barra span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1cb698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.skills .skill .paciencia{
+    width: 0%;
+    animation: 2s paciencia forwards ;
+}
+@keyframes paciencia{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .empatia{
+    width: 0%;
+    animation: 2s empatia forwards ;
+}
+@keyframes empatia{
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .puntualidad{
+    width: 0%;
+    animation: 2s puntualidad forwards ;
+}
+@keyframes puntualidad{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .tolerancia{
+    width: 0%;
+    animation: 2s tolerancia forwards ;
+}
+@keyframes tolerancia{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .responsabilidad{
+    width: 0%;
+    animation: 2s responsabilidad forwards ;
+}
+@keyframes responsabilidad{
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .honestidad{
+    width: 0%;
+    animation: 2s honestidad forwards ;
+}
+@keyframes honestidad{
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+.skills .skill .futbol{
+    width: 0%;
+    animation: 2s futbol forwards ;
+}
+@keyframes futbol{
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+.skills .skill .natacion{
+    width: 0%;
+    animation: 2s natacion forwards ;
+}
+@keyframes natacion{
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.skills .skill .dota2{
+    width: 0%;
+    animation: 2s dota2 forwards ;
+}
+@keyframes dota2{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .fortnite{
+    width: 0%;
+    animation: 2s fortnite forwards ;
+}
+@keyframes fortnite{
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+.skills .skill .ml{
+    width: 0%;
+    animation: 2s ml forwards ;
+}
+@keyframes ml{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .programacion{
+    width: 0%;
+    animation: 2s programacion forwards ;
+}
+@keyframes programacion{
+    0%{width: 0%;}
+    100%{width: 40%;}
+}
+
+.historia{
+    background-color: #1e2326;
+    color:#fff;
+    padding: 50px 20px; 
+}
+
+.historia .contenido-historia{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.historia h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.historia .fila-historia{
+    display: flex;
+    justify-content: space-between;
+}
+
+.historia .fila-historia .columna{
+    width: 49%;
+    padding: 0px 20px;
+}
+
+.historia .fila-historia .columna h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.historia .fila-historia .izquierda{
+    border-right: 2px solid #252A2E;
+}
+
+.historia .fila-historia .derecha{
+    border-left: 2px solid #252A2E;
+}
+
+.historia .fila-historia .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+
+.historia .fila-historia .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.historia .fila-historia .item .lugar{
+    color: #1cb698;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.historia .fila-historia .item .año{
+    display: block;
+    color:#1cb698;
+    margin-bottom: 10px;
+}
+
+.historia .fila-historia .item p{
+    line-height: 24px;
+}
+
+.historia .fila-historia .izq{
+    border-right: 2px solid #1cb698;
+    margin-right: 20px;  
+}
+
+.historia .fila-historia .der{
+    border-left: 2px solid #1cb698;
+    margin-left: 20px;
+}
+
+.historia .fila-historia .item .conectorn{
+    height: 2px;
+    background-color: #1cb698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+
+.historia .fila-historia .item .conectorn .circulon{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1cb698;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.historia .fila-historia .item .conectorn2{
+    height: 2px;
+    background-color: #1cb698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+
+.historia .fila-historia .item .conectorn2 .circulon2{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1cb698;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+
+.addme{
+    background-color: #252A2E;
+    color:#fff;
+    padding: 50px 20px; 
+}
+
+.addme .contenido-addme{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.addme h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.addme .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.addme .galeria .foto{
+    position: relative;
+    max-width: 350px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.addme .galeria .foto img{
+    height: 250px;
+    width: 100%;
+    display: block;
+}
+
+.addme .galeria .foto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #1cb698;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+.addme .galeria .foto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.addme .galeria .foto .overlay:hover{
+    opacity: 1;
+}
+
+.addme .galeria .foto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+.contacto{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0px;
+}
+
+.contacto .contenido-contacto{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.contacto .fila{
+    display: flex;
+}
+
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .col input,
+.contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100%;
+    background-color: #1cb698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+.contacto .col img{
+    width: 100%;
+}
+
+
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0px 30px 0px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .ir-arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1cb698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+
+/* RESPONSIVE v": */
+
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    } 
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .sobre-mi .fila-datos{
+        display: block;
+    }
+    .sobre-mi .fila-datos .columna-datos{
+        width: fit-content;
+    }
+
+    .skills .fila-skills{
+        display: block;
+    }
+    .skills .fila-skills .columna-skills{
+        width: 100%;
+    }
+    .skills .fila-skills .columna-skills .barra{
+        width: 100%;
+    }
+
+    .historia .fila-historia{
+        display: block;
+    }
+    .historia .fila-historia .izquierda{
+        width: 90%;
+    }
+    .historia .fila-historia .derecha{
+        margin-left: 20px;
+    }
+
+    .addme .galeria{
+        display: block;
+        width: 100%;
+    }
+    .addme .galeria .foto{
+        max-width: 100%;
+    }
+    .addme .galeria .foto img{
+        width: 100%;
+    }
+
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}
+
+
