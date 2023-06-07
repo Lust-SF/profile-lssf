@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portafolio Casual</title>
+    <title>I am Luis</title>
     <link rel="shortcut icon" href="img/fav.png">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -49,10 +49,10 @@
 
     <section id="sobre-mi" class="sobre-mi">
         <div class="contenido-sobre-mi">
-            <h2>¿Quien soy?</h2>
-            <p><span>Hola, soy Luis... </span>Un joven olivense amante de los viajes y de los buenos momentos con las amistades verdaderas. Fan de los juegos online, de la pizza y de las caminatas.</p>
+            <h2 id="opaca1">¿Quien soy?</h2>
+            <p id="opaca2"><span>Hola, soy Luis... </span>Un joven olivense amante de los viajes y de los buenos momentos con las amistades verdaderas. Fan de los juegos online, de la pizza y de las caminatas.</p>
             
-            <div class="fila-datos">
+            <div class="fila-datos" id="opaca3">
                 <div class="columna-datos">
                     <h3>Datos Personales</h3>
                     <ul>
@@ -100,10 +100,15 @@
                     </div>
                 </div>
             </div>
-            <button>
-                Descargar CV <i class="fa-solid fa-download"></i>
+            <div id="opaca4">
+                <button id="open_caiste">
+                Descargar a Luis <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
-            </button>
+            </button></div>
+            
+            <div class="gif-container" id="gif_container">
+                <img src="img/caiste.gif" alt="Caiste">
+            </div>
         </div>
     </section>
 
@@ -302,22 +307,25 @@
 
     <section id="contacto" class="contacto">
         <div class="contenido-contacto">
-            <h2>CONTACTO</h2>
-            <div class="fila">
+            <h2 id="seva1">CONTACTO</h2>
+            <div class="fila" id="seva2">
                 <div class="col">
                     <input type="text" placeholder="Nombre">
                     <input type="text" placeholder="Celular">
                     <input type="text" placeholder="E-mail">
                     <input type="text" placeholder="Asunto">
                     <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
+                    <button id="open_container">
                         Enviar Mensaje <i class="fa-sharp fa-solid fa-envelope"></i>
                         <span class="overlay"></span>
                     </button>
                 </div>
-                <div class="col">
+                <div class="col" id="seva">
                     <img src="img/antonio-que.JPG" alt="">
                 </div>
+            </div>
+            <div class="modal-container" id="modal_container">
+                <img src="img/Noice.webp" alt="Noice">
             </div>
         </div>
 

@@ -129,6 +129,7 @@ html{
 .sobre-mi .contenido-sobre-mi{
     max-width: 1100px;
     margin: auto;
+    position: relative;
 }
 
 .sobre-mi h2{
@@ -240,6 +241,35 @@ html{
 .sobre-mi button:hover .overlay{
     width: 100%;
 }
+
+
+
+.sobre-mi .gif-container{
+    display: flex;
+    margin: auto;
+    justify-content:center;
+    width: 60%;
+    position: absolute;
+    top: 12%;
+    left: 19%;
+    opacity: 0;
+}
+
+.sobre-mi .contenido-sobre-mi .caiste{
+    opacity: 1;
+    z-index: 10;
+}
+
+.sobre-mi .opacando{
+    opacity: 0;
+}
+
+.sobre-mi .gif-container img{
+    width: 100%;
+    border: solid 5px black;
+    border-radius:  30px;
+}
+
 
 .skills{
     background-color: #252A2E;
@@ -618,6 +648,7 @@ html{
 .contacto .contenido-contacto{
     max-width: 1100px;
     margin: auto;
+    position: relative;
 }
 
 .contacto h2{
@@ -680,6 +711,34 @@ html{
 
 .contacto .col img{
     width: 100%;
+}
+
+.contacto .modal-container{
+    display: flex;
+    margin: auto;
+    justify-content:center;
+    width: 66%;
+    position: absolute;
+    top: 12%;
+    left: 19%;
+    opacity: 0;
+
+}
+
+.contacto .opacando{
+    opacity: 0;
+}
+
+
+.contacto .contenido-contacto .show{
+    opacity: 1;  
+    z-index: 11;
+}
+
+.contacto .modal-container img{
+    width: 100%;
+    border: solid 5px black;
+    border-radius:  30px;
 }
 
 
